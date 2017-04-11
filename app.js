@@ -24,6 +24,7 @@ app.use( express.static( path.join( __dirname , 'public' ) ) );
 
 app.use( '/' , index );
 app.use( '/users' , users );
+
 app.use( '/getdata.ajax' , function ( req , res , next ) {
 	console.log( "xhr : " + req.xhr );
 	var data = {

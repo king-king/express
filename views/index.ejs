@@ -30,8 +30,10 @@
 			url : "/getdata.ajax"
 		} ).then( function ( response ) {
 			// success
+			console.log( "success" )
 		} , function ( response ) {
 			// err
+			console.log( "err" , response )
 		} );
 	} );
 	angular.bootstrap( document , [ "myapp" ] );
